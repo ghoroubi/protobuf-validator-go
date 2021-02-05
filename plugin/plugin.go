@@ -276,7 +276,7 @@ func (p *plugin) generateProto2Message(file *generator.FileDescriptor, message *
 			p.generateLengthValidator(variableName, ccTypeName, fieldName, fieldValidator)
 		} else if field.IsMessage() {
 			if repeated && nullable {
-				variableName = "*(item)"
+				variableName = "*(i)"
 			}
 			p.P(`if err := `, p.validatorPkg.Use(), `.CallValidatorIfExists(&(`, variableName, `)); err != nil {`)
 			p.In()

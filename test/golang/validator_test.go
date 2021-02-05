@@ -4,10 +4,10 @@
 package validatortest
 
 import (
-	fmt "fmt"
+	"fmt"
 	"strings"
 	"testing"
-
+. "github.com/ghoroubi/protobuf-validator-go/test"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -77,7 +77,6 @@ func buildProto3(someString string, someInt uint32, identifier string, someValue
 		SomeEnum:         EnumProto3(someEnum),
 		SomeEmbeddedEnum: ValidatorMessage3_EmbeddedEnum(someEmbeddedEnum),
 
-		SomeGogoEmbedded: goodEmbeddedProto3,
 	}
 
 	goodProto3.Repeated = make([]int32, repeatedCount)

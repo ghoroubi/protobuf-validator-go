@@ -43,8 +43,8 @@ function setup_proto_deps() {
     dep_dir="${PROJECT_DIR}/deps"
 
     proto_deps=(
-        "github.com/gogo/protobuf"
-        "github.com/golang/protobuf"
+#        "github.com/gogo/protobuf"
+#        "github.com/golang/protobuf"
         "github.com/ghoroubi/protobuf-validator-go"
     )
 
@@ -62,8 +62,8 @@ function setup_proto_deps() {
         ln -sf "${dep_location}" "${dep_dir}/${dep}"
     done
 
-    go install github.com/gogo/protobuf/protoc-gen-gogo
-    go install github.com/golang/protobuf/protoc-gen-go
+#    go install github.com/gogo/protobuf/protoc-gen-gogo
+#    go install github.com/golang/protobuf/protoc-gen-go
 
     PATH="${GOBIN:-"${HOME}/go/bin"}:${PATH}"
     export PATH
