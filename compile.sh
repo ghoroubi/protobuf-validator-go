@@ -24,4 +24,4 @@ protoc -I . \
   --go-grpc_out . \
   --go-grpc_opt paths=source_relative \
    --govalidators_out=. \
-   validator_proto3_oneof.proto
+   validator.proto
