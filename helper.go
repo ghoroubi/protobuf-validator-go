@@ -1,4 +1,4 @@
-// Copyright 2016 Nima Ghoroubi. All Rights Reserved.
+// Copyright 2021 Nima Ghoroubi. All Rights Reserved.
 // See LICENSE for licensing terms.
 
 package validator
