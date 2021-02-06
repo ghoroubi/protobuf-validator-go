@@ -18,10 +18,12 @@
 #  https://github.com/grpc/grpc-go/tree/master/examples
 
 #protoc acl.proto -I . --go-grpc-out=. --go_out=plugins=grpc:.
+for i in $(basename ./*.proto .proto); do
 protoc -I . \
   --go_out . \
   --go_opt paths=source_relative\
   --go-grpc_out . \
   --go-grpc_opt paths=source_relative \
    --govalidators_out=. \
-   validator.proto
+   "${i}".proto
+done

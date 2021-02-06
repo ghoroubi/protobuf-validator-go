@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ghoroubi/protobuf-validator-go/plugin"
+	"github.com/ghoroubi/protobuf-validator-go/plugin_proto_validator"
 	"github.com/gogo/protobuf/proto"
 	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
 )

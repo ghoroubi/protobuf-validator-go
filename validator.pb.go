@@ -314,28 +314,13 @@ var file_validator_proto_extTypes = []protoimpl.ExtensionInfo{
 // Extension fields to descriptorpb.FieldOptions.
 var (
 	// optional validator.FieldValidator field = 65020;
-	//E_Field = &file_validator_proto_extTypes[0]
-	E_Field = &proto.ExtensionDesc{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
-		ExtensionType: (*FieldValidator)(nil),
-		Field:         65020,
-		Name:          "validator.field",
-		Tag:           "bytes,65020,opt,name=field",
-		Filename:      "validator.proto",
-	}
+	E_Field = &file_validator_proto_extTypes[0]
 )
 
 // Extension fields to descriptorpb.OneofOptions.
 var (
 	// optional validator.OneofValidator oneof = 65021;
-	E_Oneof = &proto.ExtensionDesc{
-		ExtendedType:  (*descriptorpb.OneofOptions)(nil),
-		ExtensionType: (*OneofValidator)(nil),
-		Field:         65021,
-		Name:          "validator.oneof",
-		Tag:           "bytes,65021,opt,name=oneof",
-		Filename:      "validator.proto",
-	}
+	E_Oneof = &file_validator_proto_extTypes[1]
 )
 
 var File_validator_proto protoreflect.FileDescriptor

@@ -5,8 +5,8 @@ package validator_examples
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
 	_ "github.com/ghoroubi/protobuf-validator-go"
+	proto "github.com/golang/protobuf/proto"
 	math "math"
 )
 

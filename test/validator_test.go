@@ -5,10 +5,9 @@ package validatortest
 
 import (
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
-. "github.com/ghoroubi/protobuf-validator-go/test"
-	"github.com/stretchr/testify/assert"
 )
 
 var (

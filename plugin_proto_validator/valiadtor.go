@@ -275,7 +275,8 @@ func (p *plugin) generateProto3Message(file *generator.FileDescriptor, message *
 			oneOfName := generator.CamelCase(oneOf.GetName())
 			p.P(`if v.Get` + oneOfName + `() == nil {`)
 			p.In()
-			p.P(`return `, p.validatorPkg.Use(), `.FieldError("`, oneOfName, `",`, p.fmtPkg.Use(), `.Errorf("one of the fields must be set"))`)
+			p.P(`return `,
+				p.validatorPkg.Use(), `.FieldError("`, oneOfName, `",`, p.fmtPkg.Use(), `.Errorf("one of the fields must be set"))`)
 			p.Out()
 			p.P(`}`)
 		}

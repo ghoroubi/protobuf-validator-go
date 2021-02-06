@@ -8,5 +8,5 @@ export PROJECT_DIR
 
 source scripts/includes/deps.sh
 
-#install_protobuf
-setup_proto_deps
+proto_installer
+dependencies_installer
